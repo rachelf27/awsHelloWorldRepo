@@ -1,0 +1,1 @@
+This is a simple Hello World project created to be used to set up an AWS Pipeline
