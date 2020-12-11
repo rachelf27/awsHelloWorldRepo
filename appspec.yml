@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
-files:
-  - source: /hello.cpp
+# files:
+#   - source: /hello.cpp
     #destination: c:\inetpub\wwwroot
 # hooks:
 #   BeforeInstall:
