@@ -1,18 +1,17 @@
 version: 0.0
 os: linux
-phases:
-  install:
-    commands:
-      - apt-get update -y
-      - apt-get install -y build-essential
-  build:
-    commands:
-      - echo Build started on `date`
-      - echo Compiling the C++ code...
-      - g++ hello.cpp -o hello.out
-  post_build:
-    commands:
-      - echo Build completed on `date`
-artifacts:
-  files:
-    - hello.out
+files:
+  - source: /hello.cpp
+    #destination: c:\inetpub\wwwroot
+# hooks:
+#   BeforeInstall:
+#     - location: scripts/install_dependencies
+#       timeout: 300
+#       runas: root
+#     - location: scripts/start_server
+#       timeout: 300
+#       runas: root
+#   ApplicationStop:
+#     - location: scripts/stop_server
+#       timeout: 300
+#       runas: root
